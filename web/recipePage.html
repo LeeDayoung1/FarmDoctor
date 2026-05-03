@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Inknut Antiqua' rel='stylesheet'>
+    <title>Seasonal Produce</title>
+    <style>
+        body {
+            background-color: #226A3F;
+        }
+        #banner {
+            height: 200px;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: #ECE3CE;
+            font-size: 70px;
+            font-family: 'Inknut Antiqua', sans-serif;
+            font-weight: bold;
+        }
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            grid-row-gap: 90px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            width: 80%;
+            height: 150px;
+            background-color: #ECE3CE;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            border-radius: 15px;
+            color: #3A4D39;
+            font-family: 'Inknut Antiqua', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none; /* 테두리 없앰 */
+            outline: none;
+            justify-self: center;
+        }
+
+        .grid-container {
+            display: grid;
+            column-gap: 0px;
+            row-gap: 20px;
+            grid-template-columns: auto auto;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div id="banner">Recipe</div>
+    <div class="button-container">
+        <button class="button" onclick="navigateToPage('foodCrop')">Food crop<br>Recipe</button>
+        <button class="button" onclick="navigateToPage('vegetable')">Vegetable<br>Recipe</button>
+        <button class="button" onclick="navigateToPage('specialCrop')">Special crop<br>Recipe</button>
+        <button class="button" onclick="navigateToPage('fruit')">Fruit<br>Recipe</button>
+
+    </div>
+    <script>
+        function navigateToPage(category) {
+            var pageUrl;
+            // 각각의 카테고리에 따라 페이지 URL 넘겨줌
+            switch (category) {
+                case 'foodCrop':
+                    pageUrl = 'foodCropRecipe.html';
+                    break;
+                case 'vegetable':
+                    pageUrl = 'vegetableRecipe.html';
+                    break;
+                case 'specialCrop':
+                    pageUrl = 'specialCropRecipe.html';
+                    break;
+                case 'fruit':
+                    pageUrl = 'fruitRecipe.html';
+                    break;
+            
+                default:
+                    pageUrl = '#';
+                    break;
+            }
+            window.location.href = "http://127.0.0.1:5500/" + pageUrl;
+        }
+    </script>
+</body>
+
+</html>

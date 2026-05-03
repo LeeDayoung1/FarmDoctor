@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Inknut Antiqua' rel='stylesheet'>
+    <title>Recipe for food crop</title>
+    <style>
+        /* 스타일 설정은 여기에 */
+        body {
+            background-color: #226A3F;
+            font-family: 'Inknut Antiqua', sans-serif;
+        }
+
+        #banner {
+            height: 200px;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: #ECE3CE;
+            font-size: 70px;
+            font-family: 'Inknut Antiqua', sans-serif;
+            font-weight: bold;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0px;
+            grid-row-gap: 100px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            width: 80%;
+            height: 150px;
+            background-color: #ECE3CE;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            border-radius: 15px;
+            color: #3A4D39;
+            font-family: 'Inknut Antiqua', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            outline: none;
+            justify-self: center;
+        }
+   
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .content-c{
+            background-color: #d9d9d9;
+            width:100%;
+            height:10%;
+            padding: 10px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="banner">Recipe for food crop</div>
+    <div class="button-container" id="itemInfoContainer">
+        <!-- 아이템 정보가 동적으로 생성될 자리 -->
+    </div>
+
+    <script>
+        // 이전에 선택한 아이템 정보를 저장할 배열
+        var selectedItems = [];
+
+        // Set to keep track of unique item names
+        var uniqueItemNames = new Set();
+
+        // PHP 파일에서 JSON 데이터를 가져오는 함수
+        function fetchData() {
+            fetch('http://localhost/foodCrop2.php')
+                .then(response => response.json())
+                .then(data => {
+                    // 데이터를 사용하여 동적으로 버튼 생성하고 정보 넣어줌!
+                    var itemInfoContainer = document.getElementById("itemInfoContainer");
+
+                    data.forEach(function (item) {
+                        // Check if the item_name is already in the set
+                        if (!uniqueItemNames.has(item.item_name)) {
+                            var button = document.createElement("button");
+                            button.className = "button";
+                            button.textContent = item.item_name;
+                            button.onclick = function () {
+                                // 아이템 클릭 시 선택한 아이템 정보를 배열에 추가하고 페이지 이동
+                                selectedItems.push(item);
+                                goToSpecialCropData(item);
+                            };
+                            itemInfoContainer.appendChild(button);
+
+                            // Add the item_name to the set
+                            uniqueItemNames.add(item.item_name);
+                        }
+                    });
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        }
+
+        // 페이지 로드 시 데이터를 가져와서 버튼 생성
+        window.onload = fetchData;
+
+        // 선택한 아이템 정보를 이용하여 특정 URL로 이동하는 함수
+        function goToSpecialCropData(item) {
+            // item_name에 따른 특정 URL 생성
+            var itemUrl = '';
+            switch (item.item_name) {
+                case 'Rice':
+                    itemUrl = 'https://www.10000recipe.com/recipe/6828882';
+                    break;
+                case 'Glutinous rice':
+                    itemUrl = 'https://www.10000recipe.com/recipe/6863037';
+                    break;
+                case 'Bean':
+                    itemUrl = 'https://www.10000recipe.com/recipe/6876733';
+                    break;
+                case 'Red bean':
+                    itemUrl = 'https://www.10000recipe.com/recipe/6833846';
+                    break;
+                case 'Green bean':
+                    itemUrl = 'https://www.10000recipe.com/recipe/6888477';
+                    break;
+                case 'Buckwheat':
+                    itemUrl = 'https://www.10000recipe.com/recipe/6873019';
+                    break;
+                case 'Sweet potato':
+                    itemUrl = 'https://www.10000recipe.com/recipe/6877282';
+                    break;
+                case 'Potato':
+                    itemUrl = 'https://www.10000recipe.com/recipe/4007561';
+                    break;
+                default:
+                    // 기본적으로 어떤 작업도 하지 않음
+                    break;
+            }
+
+            // 생성한 URL로 이동
+            window.location.href = itemUrl;
+        }
+
+    </script>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="content-c"> ⓒ farmDoctor. All Rights Reserved </div> 
+</body>
+
+</html>

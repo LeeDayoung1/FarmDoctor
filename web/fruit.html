@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Inknut Antiqua' rel='stylesheet'>
+    <title>Fruit</title>
+    <style>
+        /* 스타일 설정은 여기에 */
+        body {
+            background-color: #226A3F;
+            font-family: 'Inknut Antiqua', sans-serif;
+        }
+
+        #banner {
+            height: 200px;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: #ECE3CE;
+            font-size: 70px;
+            font-family: 'Inknut Antiqua', sans-serif;
+            font-weight: bold;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            grid-row-gap: 30px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            width: 80%;
+            height: 150px;
+            background-color: #ECE3CE;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            border-radius: 15px;
+            color: #3A4D39;
+            font-family: 'Inknut Antiqua', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none; /* 테두리 없앰 */
+            outline: none;
+            justify-self: center;
+        }
+
+        .grid-container {
+            display: grid;
+            column-gap: 0px;
+            row-gap: 20px;
+            grid-template-columns: auto auto;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .item-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="banner">Fruit</div>
+
+    <div class="button-container" id="itemInfoContainer">
+        <!-- 아이템 정보가 동적으로 생성될 자리 -->
+    </div>
+
+    <script>
+        // 이전에 선택한 아이템 정보를 저장할 배열
+        var selectedItems = [];
+
+        // PHP 파일에서 JSON 데이터를 가져오는 함수
+        function fetchData() {
+            fetch('http://localhost/fruit2.php')
+                .then(response => response.json())
+                .then(data => {
+                    // 데이터를 사용하여 동적으로 버튼 생성하고 정보 넣어줌!
+                    var itemInfoContainer = document.getElementById("itemInfoContainer");
+
+                    data.forEach(function (item) {
+                        var button = document.createElement("button");
+                        button.className = "button";
+                        button.textContent = item.item_name + " " + item.kind_name;
+                        button.onclick = function () {
+                            // 아이템 클릭 시 선택한 아이템 정보를 배열에 추가하고 페이지 이동
+                            selectedItems.push(item);
+                            goToSpecialCropData(item);
+                        };
+                        itemInfoContainer.appendChild(button);
+                    });
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        }
+
+        // 페이지 로드 시 데이터를 가져와서 버튼 생성
+        window.onload = fetchData;
+
+        // specialCropData.html로 이동하는 함수
+        function goToSpecialCropData(item) {
+            // 선택한 아이템 정보를 query parameter로 전달하여 페이지 이동
+            var queryParams = `?itemCode=${item.item_code}&kindCode=${item.kind_code}&ranks=${item.ranks}&item_name=${item.item_name}&kind_name=${item.kind_name}&unit=${item.unit}&day2=${item.day2}&dpr2=${item.dpr2}&day3=${item.day3}&dpr3=${item.dpr3}&day7=${item.day7}&dpr7=${item.dpr7}`;
+            window.location.href = `http://127.0.0.1:5500/fruitData.html${queryParams}`;
+        }
+    </script>
+
+</body>
+
+</html>

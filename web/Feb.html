@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>February</title>
+    <link href='https://fonts.googleapis.com/css?family=Inknut Antiqua' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            background-color: #226A3F;
+            font-family: 'Inknut Antiqua', sans-serif;
+        }
+        #banner {
+            height: 200px;
+            padding-left: 32px;
+            padding-right: 10px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: #ECE3CE;
+            font-size: 70px;
+            font-family: 'Inknut Antiqua', sans-serif;
+            font-weight: bold;
+        }
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            grid-row-gap: 90px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button {
+            width: 80%;
+            height: 150px;
+            background-color: #ECE3CE;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            border-radius: 15px;
+            color: #3A4D39;
+            font-family: 'Inknut Antiqua', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none; /* 테두리 없앰 */
+            outline: none;
+            justify-self: center;
+        }
+        .grid-container {
+        display: grid;
+        column-gap: 0px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap:20px;
+        padding: 10px;
+        }
+    
+        #openNav {
+        color: #ECE3CE;
+        padding: 10px;
+        padding-left: 10px;
+        }
+        #mySidebar {
+            width: 0;
+            overflow-x: hidden;
+            right: 0;
+            background-color: #226A3F;
+            position: fixed;
+            height: 100%;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 1;
+        }
+        .w3-sidebar{
+            position:absolute;
+        }
+        .w3-bar-item {
+        padding: 16px;
+        text-decoration: none;
+        color: #ECE3CE;
+        border-bottom: 2px solid #ECE3CE;
+        background-color: #226A3F;
+        font-size: 20px;
+        }
+        .w3-bar-item:first-child {
+            padding: 16px;
+            text-decoration: none;
+            color: #ECE3CE;
+            background-color: rgba(34,106,63,107);
+            font-size: 20px;
+        }
+        .w3-bar-item:hover {
+            background-color: #226A3F;
+        }
+        #closeBtn {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            font-size: 30px;
+            margin-top: 10px;
+            color: #ECE3CE;
+            cursor: pointer;
+        }
+        .content-h {
+            background-color: #226A3F;
+        }
+        .content-u{
+            background-color:rgba(34,106,63,107);
+            text-align:center;
+            color: #ECE3CE;
+        }
+        .content-s{
+            font-size:1.0rem;
+        }
+        .content-m{
+            font-size:1.5rem;
+        }
+        .s-b{
+        width: 100%;
+        height: 2px;
+        background-color: #ECE3CE;
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-row">
+        <div class="section">
+            <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="mySidebar">
+                <br><br>
+                <div id="closeBtn" onclick="w3_close()">&times;</div>
+                <a href="#" class="w3-bar-item w3-button w3-xxlarge">
+                    <div class ="content-m">Menu</div></a>
+                <div class = "s-b"></div>
+                <a href="foodCrop.html" class="w3-bar-item w3-button w3-xxlarge">
+                    <div class="content-m">Food Crop<br></div></a>
+                <div class = "s-b"></div>
+                <a href="vegetabl.html" class="w3-bar-item w3-button w3-xxlarge">
+                    <div class = "content-m">Vegetable</div></a>
+                <div class = "s-b"></div>
+                <a href="specialCrop.html" class="w3-bar-item w3-button w3-xxlarge">
+                    <div class="content-m">Special Crop</div></a>
+                <div class = "s-b"></div>
+                <a href="fruit.html" class="w3-bar-item w3-button w3-xxlarge">
+                    <div class = "content-m">Fruit</div></a>
+                <div class = "s-b"></div>
+                <a href="seasonalProduce.html" class="w3-bar-item w3-button w3-xxlarge">
+                <div class = "content-m">Seasonal Produce</div></a>
+                <div class = "s-b"></div>
+                <a href="recipePage.html" class="w3-bar-item w3-button w3-xxlarge">
+                    <div class = "content-m">Recipe</div></a>
+                <div class = "s-b"></div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="content-h">
+                <button id="openNav" class="w3-button content-h w3-xxlarge w3-right" onclick="w3_open()">&#9776;</button>
+            </div>
+        </div>
+        <div id="banner">February</div>
+        <div class="grid-container">
+            <button class="button" id="button1">Shepherd's purse</button>
+            <button class="button" id="button2">Wild garlic</button>
+            <button class="button" id="button3">Deodeok</button>
+            <button class="button" id="button4">Strawberry</button>
+            <button class="button" id="button5">Bomdong</button>
+            <button class="button" id="button6">Turnip</button>
+            <button class="button" id="button7">Spinach</button>
+            <button class="button" id="button8">Lotus root</button>
+            <button class="button" id="button9">Burdock</button>
+            <button class="button" id="button10">Plum</button>
+            <button class="button" id="button11">Cheonhyehyang<br>(tangerine)</button>
+            <button class="button" id="button12">Hallabong<br>(tangerine)</button>
+            <br>
+        </div>
+    
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "70%";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+</body>
+</html>

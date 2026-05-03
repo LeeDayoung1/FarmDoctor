@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Inknut Antiqua' rel='stylesheet'>
+    <title>Seasonal Produce</title>
+    <style>
+        body {
+            background-color: #226A3F;
+        }
+        #banner {
+            height: 200px;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: #ECE3CE;
+            font-size: 70px;
+            font-family: 'Inknut Antiqua', sans-serif;
+            font-weight: bold;
+        }
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            grid-row-gap: 90px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            width: 80%;
+            height: 150px;
+            background-color: #ECE3CE;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            border-radius: 15px;
+            color: #3A4D39;
+            font-family: 'Inknut Antiqua', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none; /* 테두리 없앰 */
+            outline: none;
+            justify-self: center;
+        }
+
+        .grid-container {
+            display: grid;
+            column-gap: 0px;
+            row-gap: 20px;
+            grid-template-columns: auto auto;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div id="banner">Month</div>
+    <div class="button-container">
+        <button class="button" onclick="navigateToPage('January')">January</button>
+        <button class="button" onclick="navigateToPage('February')">February</button>
+        <button class="button" onclick="navigateToPage('March')">March</button>
+        <button class="button" onclick="navigateToPage('April')">April</button>
+        <button class="button" onclick="navigateToPage('May')">May</button>
+        <button class="button" onclick="navigateToPage('June')">June</button>
+        <button class="button" onclick="navigateToPage('July')">July</button>
+        <button class="button" onclick="navigateToPage('August')">August</button>
+        <button class="button" onclick="navigateToPage('September')">September</button>
+        <button class="button" onclick="navigateToPage('October')">October</button>
+        <button class="button" onclick="navigateToPage('November')">November</button>
+        <button class="button" onclick="navigateToPage('December')">December</button>
+    </div>
+    <script>
+        function navigateToPage(category) {
+            var pageUrl;
+            // 각각의 카테고리에 따라 페이지 URL 넘겨줌
+            switch (category) {
+                case 'January':
+                    pageUrl = 'Jan.html';
+                    break;
+                case 'February':
+                    pageUrl = 'Feb.html';
+                    break;
+                case 'March':
+                    pageUrl = 'Mar.html';
+                    break;
+                case 'April':
+                    pageUrl = 'Apr.html';
+                    break;
+                case 'May':
+                    pageUrl = 'May.html';
+                    break;
+                case 'June':
+                    pageUrl = 'Jun.html';
+                    break;
+                case 'July':
+                    pageUrl = 'Jul.html';
+                    break;
+                case 'August':
+                    pageUrl = 'Aug.html';
+                    break;
+                case 'September':
+                    pageUrl = 'Sep.html';
+                    break;
+                case 'October':
+                    pageUrl = 'Oct.html';
+                    break;
+                case 'November':
+                    pageUrl = 'Nov.html';
+                    break;
+                case 'December':
+                    pageUrl = 'Dec.html';
+                    break;
+                default:
+                    pageUrl = '#';
+                    break;
+            }
+            window.location.href = "http://127.0.0.1:5500/" + pageUrl;
+        }
+    </script>
+</body>
+
+</html>

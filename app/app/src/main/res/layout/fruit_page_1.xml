@@ -1,0 +1,1118 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AFD3B7">
+
+
+    <TextView
+        android:id="@+id/itemTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="과일 품목"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/itemTextView">
+
+        <!-- 버튼들을 포함할 LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 1 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="감귤 - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="감귤 - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="감귤(노지) - S과"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 2 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="감귤(노지) - M과"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="감귤(시설) - S과"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="감귤(시설) - M과"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 3 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="단감 - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="단감 - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="레몬(수입) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 4 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="레몬(수입) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="바나나(수입) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="바나나(수입) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 5 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="망고(수입) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="망고(수입) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button15"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="배(신고) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 6 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button16"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="배(신고) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button17"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="배(만삼길) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button18"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="배(만삼길) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 7 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button19"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="배(장십랑) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button20"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="배(장십랑) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button21"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="배(원황) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 8 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button22"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="배(원황) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button23"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="복숭아(백도) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button24"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="복숭아(백도) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 9 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button25"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="복숭아(창방조생) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button26"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="복숭아(창방조생) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button27"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="복숭아(유명) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 10 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button28"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="복숭아(유명) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button29"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="사과(홍옥) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button30"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="사과(홍옥) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 11 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button31"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="사과(후지) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button32"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="사과(후지) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button33"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="사과(쓰가루)(아오리) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 12 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button34"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="사과(쓰가루)(아오리) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button35"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="사과(홍로) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button36"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="사과(홍로) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 13 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button37"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="오렌지(수입) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button38"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="오렌지(수입) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button39"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="오렌지(네이블 미국) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 14 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button40"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="오렌지(네이블 미국) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button41"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="오렌지(발렌시아 미국) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button42"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="오렌지(발렌시아 미국) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 15 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button43"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="오렌지(네이블 EU) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button44"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="오렌지(네이블 EU) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button45"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="오렌지(네이블 호주) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 16 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button46"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="오렌지(네이블 호주) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button47"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="키위(참다래)(국산) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button48"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="키위(참다래)(국산) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 17 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button49"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="키위(참다래)(그린 뉴질랜드) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button50"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="키위(참다래)(그린 뉴질랜드) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button51"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="체리(수입) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 18 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button52"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="체리(수입) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button53"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="파인애플(수입) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button54"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="파인애플(수입) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 19 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button55"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="포도(캠벨얼리) - L과"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button56"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="포도(캠벨얼리) - M과"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button57"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="포도(유거봉) - L과"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 20 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button58"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="포도(유거봉) - M과"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button59"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="포도(델라웨어) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button60"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="포도(델라웨어) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 21 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button61"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="포도(MBA) - L과"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button62"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="포도(MBA) - M과"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button63"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="포도(수입) - 상품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 22 번째 줄 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button64"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="포도(수입) - 중품"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button65"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="샤인머스켓 - L과"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/button66"
+                    android:layout_width="130dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button2"
+                    android:text="샤인머스켓 - M과"
+                    android:textColor="#0F8730"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@android:drawable/ic_menu_revert"
+        android:contentDescription="Go back to the previous screen" />
+
+    <!-- 홈으로 가기 버튼 -->
+    <ImageButton
+        android:id="@+id/homebutton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/backbutton"
+        android:layout_marginStart="270dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/backbutton"
+        android:contentDescription="Go back home"
+        android:src="@drawable/home_icon" />
+
+</RelativeLayout>

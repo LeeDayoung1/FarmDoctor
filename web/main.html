@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link href='https://fonts.googleapis.com/css?family=Inknut Antiqua' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            background-color: #4E6F52;
+            margin: 0;
+            font-family: 'Inknut Antiqua', sans-serif;
+        }
+        #openNav {
+        color: #ECE3CE;
+        padding: 10px;
+        position: fixed;
+        right: 10px;
+        }
+        #mySidebar {
+            width: 0;
+            overflow-x: hidden;
+            right: 0;
+            background-color: #3f7852;
+            position: fixed;
+            height: 100%;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 1;
+        }
+        .w3-sidebar{
+            position:absolute;
+        }
+        .w3-bar-item {
+            padding: 16px;
+            text-decoration: none;
+            color: #ECE3CE;
+            border-bottom: 2px solid #ECE3CE;
+            background-color: #3F7752;
+            /*transition: background-color 0.3s; */
+            font-size: 20px;
+        }
+        .w3-bar-item:first-child {
+            padding: 16px;
+            text-decoration: none;
+            color: #ECE3CE;
+            background-color: rgba(34,106,63,107);
+            font-size: 20px;
+        }
+        .w3-bar-item:hover {
+            background-color: #226A3F;
+        }
+        #closeBtn {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            font-size: 30px;
+            margin-top: 10px;
+            color: #ECE3CE;
+            cursor: pointer;
+        }
+        .content-h {
+            background-color: #4E6F52;
+        }
+        .content-img{
+            background: #4E6F52;
+            text-align:center;
+            max-width: 100%;
+            height :auto;
+            display:block;
+            margin:0 auto;
+        }
+        .content-u{
+            background-color:rgba(34,106,63,107);
+            text-align:center;
+            color: #ECE3CE;
+        }
+        .content-s{
+            font-size:1.0rem;
+        }
+        .content-m{
+            font-size:1.5rem;
+        }
+        .s-b{
+            width: 100%;
+            height: 2px;
+            background-color: #ECE3CE;
+        }
+        .content-c{
+            background-color: #d9d9d9;
+            padding: 10px;
+            font-size: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-row">
+        <div class="section">
+            <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="mySidebar">
+                <br><br>
+                <div id="closeBtn" onclick="w3_close()">&times;</div>
+                <a href="#" class="w3-bar-item w3-button w3-xxlarge">
+                    <div class ="content-m">Menu</div></a>
+                <div class = "s-b"></div>
+                <a href="foodCrop.html" class="w3-bar-item w3-button w3-xxlarge">
+                    <div class="content-m">Food Crop<br></div></a>
+                <div class = "s-b"></div>
+                <a href="vegetable.html" class="w3-bar-item w3-button w3-xxlarge">
+                    <div class = "content-m">Vegetable</div></a>
+                <div class = "s-b"></div>
+                <a href="specialCrop.html" class="w3-bar-item w3-button w3-xxlarge">
+                    <div class="content-m">Special Crop</div></a>
+                <div class = "s-b"></div>
+                <a href="fruit.html" class="w3-bar-item w3-button w3-xxlarge">
+                    <div class = "content-m">Fruit</div></a>
+                <div class = "s-b"></div>
+                <a href="seasonalProduce.html" class="w3-bar-item w3-button w3-xxlarge">
+                <div class = "content-m">Seasonal Produce</div></a>
+                <div class = "s-b"></div>
+                <a href="recipePage.html" class="w3-bar-item w3-button w3-xxlarge">
+                    <div class = "content-m">Recipe</div></a>
+                <div class = "s-b"></div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="content-h">
+                <br>
+                <div class = "w3-cell-row">
+                    <div class="w3-container w3-cell">
+                        &nbsp;&nbsp;
+                    </div>
+                    <div class="w3-container w3-cell">
+                        <a href="main.html">
+                            <img class = "content-img" src = "img/logo.png" width="200">
+                        </a>
+                    </div>
+                    <div class="w3-container w3-cell"></div>
+                        <button id="openNav" class="w3-button content-h w3-xxlarge w3-right" onclick="w3_open()">&#9776;</button>
+                    </div>
+                </div>
+                <br>
+                <img class = "content-img" src = "img/farmer.png">
+            </div>
+            <div class="content-u">
+                <br><br>
+                <div class = "content-s">We provide information on farmers'<br>markets, recipes, seasonal produce,<br>and more.</div>
+                <br><br>
+            </div>
+            <div class="content-c"> ⓒ farmDoctor. All Rights Reserved </div> 
+        </div>
+    
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "70%";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+</body>
+</html>
