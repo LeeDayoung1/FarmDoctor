@@ -7,7 +7,7 @@
   <img src="./FarmDoctor_web.gif" width="600"/>
 </div>
 
-> ⚠️ **안내**: 원래 웹(`FarmDoctor_WEB`)과 앱(`Farm_doctor`) 레포지토리가 분리되어 있었으나, 포트폴리오 정리를 위해 하나의 레포지토리로 통합하였습니다. 
+> ⚠️ **안내**: 주 계정 이전(`jga-eun` → `gaeun-jay`)으로 인해 기존 커밋 히스토리가 유지되지 않습니다. 또한 원래 웹(`FarmDoctor_WEB`)과 앱(`Farm_doctor`) 레포지토리가 분리되어 있었으나, 포트폴리오 정리를 위해 하나의 레포지토리로 통합하였습니다.
 > - 웹 원본: [na0young/Farmer_WEB](https://github.com/na0young/Farmer_WEB.git)
 > - 앱 원본: [yeonnnnni/Farm_doctor](https://github.com/yeonnnnni/Farm_doctor.git)
 
@@ -35,7 +35,7 @@
 
 | GitHub | 역할 |
 |--------|------|
-| jga-eun (본인) | 기획, 디자인, 백엔드, 프론트엔드 |
+| gaeun-jay (본인) | 기획, 디자인, 백엔드, 프론트엔드 |
 | [@na0young](https://github.com/na0young) | 기획, 백엔드, 프론트엔드 |
 | [@yeonnnnni](https://github.com/yeonnnnni) | 기획, 백엔드, 프론트엔드 |
 | [@LeeDayoung1](https://github.com/LeeDayoung1) | 기획, 백엔드, 프론트엔드 |
