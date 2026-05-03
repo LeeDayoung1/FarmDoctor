@@ -2,12 +2,12 @@
 **농산물 시세 및 제철 농산물, 레시피 안내 플랫폼**
 
 <div align="center">
-  <img src="./FarmDoctor_App.png" width="800"/>
+  <img src="./FarmDoctor_APP.png" width="800"/>
   <br><br>
   <img src="./FarmDoctor_web.gif" width="600"/>
 </div>
 
-> ⚠️ **안내**: 원래 웹(`FarmDoctor_WEB`)과 앱(`Farm_doctor`) 레포지토리가 분리되어 있었으나, 포트폴리오 정리를 위해 하나의 레포지토리로 통합하였습니다. 통합 과정에서 기존 커밋 히스토리는 유지되지 않습니다.
+> ⚠️ **안내**: 원래 웹(`FarmDoctor_WEB`)과 앱(`Farm_doctor`) 레포지토리가 분리되어 있었으나, 포트폴리오 정리를 위해 하나의 레포지토리로 통합하였습니다. 
 > - 웹 원본: [na0young/Farmer_WEB](https://github.com/na0young/Farmer_WEB.git)
 > - 앱 원본: [yeonnnnni/Farm_doctor](https://github.com/yeonnnnni/Farm_doctor.git)
 
