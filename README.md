@@ -7,7 +7,7 @@
   <img src="./FarmDoctor_web.gif" width="600"/>
 </div>
 
-> ⚠️ **안내**: 주 계정 이전(`jga-eun` → `gaeun-jay`)으로 인해 기존 커밋 히스토리가 유지되지 않습니다. 또한 원래 웹(`FarmDoctor_WEB`)과 앱(`Farm_doctor`) 레포지토리가 분리되어 있었으나, 포트폴리오 정리를 위해 하나의 레포지토리로 통합하였습니다.
+> ⚠️ **안내**: 포트폴리오 정리를 위해 앱(`Farm_doctor`)과 웹(`FarmDoctor_WEB`) 레포지토리를 하나로 통합하여 fork한 프로젝트입니다.
 > - 웹 원본: [na0young/Farmer_WEB](https://github.com/na0young/Farmer_WEB.git)
 > - 앱 원본: [yeonnnnni/Farm_doctor](https://github.com/yeonnnnni/Farm_doctor.git)
 
@@ -35,20 +35,18 @@
 
 | GitHub | 역할 |
 |--------|------|
-| gaeun-jay (본인) | 기획, 디자인, 백엔드, 프론트엔드 |
+| LeeDayoung1| 기획, 백엔드, 프론트엔드 |
+| [@gaeun-jay](https://github.com/gaeun-jay) | 기획, 디자인, 백엔드, 프론트엔드 |
 | [@na0young](https://github.com/na0young) | 기획, 백엔드, 프론트엔드 |
 | [@yeonnnnni](https://github.com/yeonnnnni) | 기획, 백엔드, 프론트엔드 |
-| [@LeeDayoung1](https://github.com/LeeDayoung1) | 기획, 백엔드, 프론트엔드 |
 
 ### 제가 담당한 주요 작업은 다음과 같습니다
 
 | 구분 | 내용 |
 |------|------|
-| **PM** | 프로젝트 전체 일정 관리 및 기획 |
-| **Design** | Figma, Procreate를 활용한 UI/UX 디자인 |
-| **DB 설계** | MySQL 스키마 설계 및 구축 (foodCrop, vegetable, specialCrop, fruit, recipe, tip 등) |
-| **Web 개발** | 프론트엔드 및 백엔드 전체 구현 (HTML/CSS/JS + XAMPP/PHP) |
-| **App 기여** | MySQL DB 설계 및 구축 기여 |
+| **App Frontend** | 메인페이지 및 부류별 페이지 생성 및 연결<br>페이지별 데이터 삽입 환경 구축<br>기종에 따른 깨짐 해결을 위한 스크롤 기능 삽입<br>뒤로가기 및 메인페이지 이동 구현 |
+| **App DB 구축** | 레시피 데이터 구축 (MySQL)<br>제철 농산물 데이터 구축 (MySQL)<br>농산물 구매 팁 데이터 구축 (MySQL) |
+| **Web DB 설계** | MySQL 스키마 설계 및 구축 (foodCrop, vegetable, specialCrop, fruit, recipe, tip 등) |
 
 ---
 
